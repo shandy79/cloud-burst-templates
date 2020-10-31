@@ -1,0 +1,15 @@
+# Only those required to run the scripts in python_clients
+cloudant
+ibm-cos-sdk
+cos-aspera
+requests
+
+# Others required by the code
+#biosppy
+#h5py
+#matplotlib
+#numpy
+#pandas
+#scipy
+#scikit-learn
+#tensorflow==2.0.1

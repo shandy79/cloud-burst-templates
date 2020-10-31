@@ -1,0 +1,8 @@
+{
+    "_id": "_design/cloudant_filters",
+    "filters": {
+        "create_segments": "function(doc, req) { if (doc['<segment_type>']['status'] == 'pending') { return true; } return false; }",
+        "analyze_segment": "function(doc, req) { if (doc['type'] == '<segment_type>' && ! ('compute_end' in doc)) { return true; } return false; }",
+        "reassemble_segments": "function(doc, req) { if (doc['type'] == '<segment_type>' && 'compute_end' in doc) { return true; } return false; }"
+    }
+}
