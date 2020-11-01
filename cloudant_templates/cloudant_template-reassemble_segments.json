@@ -1,0 +1,39 @@
+{
+    "_id": "BED32-2016-09-29-13-03",
+    "cos_bucket": "sjh15-cos-bucket-03",
+    "raw": {
+        "file_name": "BED32-2016-09-29-13-03.h5",
+        "local_path": ".",
+        "cos_path": "BED32-2016-09-29-13-03/BED32-2016-09-29-13-03.h5",
+        "input_retention_flag": "t",
+        "raw_debug_retention_flag": "t"
+    },
+    "infer": {
+        "status": "segmented",
+        "segment_size": 1658880,
+        "debug_retention_flag": "t",
+        "segments": 99
+    }
+}
+
+
+// Segment following analysis
+{
+    "_id": "BED32-2016-09-29-13-03.infer.S0",
+    "raw_id": "BED32-2016-09-29-13-03",
+    "raw_cos_bucket": "sjh15-cos-bucket-03",
+    "type": "infer",
+    "id": "S0",
+    "segment_start": 0,
+    "segment_end": 1658880,
+    "segment_size": 1658880,
+    "cos_file_raw": "BED32-2016-09-29-13-03/raw/S0.npy",
+
+    // Populated after segment analysis is complete
+    "compute_target": "fn:analyzeSegmentChange",
+    "last_seg": "false",
+    "sw_version": "afibpytf2_gpu-0018-0.85.hdf5",
+    "cos_file_output": "BED32-2016-09-29-13-03/infer/S0.npy",
+    "compute_start": "2020-10-23 18:30:14.712839",
+    "compute_end": "2020-10-23 18:31:08.572099"
+}

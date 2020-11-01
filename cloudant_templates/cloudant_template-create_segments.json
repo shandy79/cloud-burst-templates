@@ -1,0 +1,16 @@
+{
+    "_id": "BED32-2016-09-29-13-03",
+    "cos_bucket": "sjh15-cos-bucket-03",
+    "raw": {
+        "file_name": "BED32-2016-09-29-13-03.h5",
+        "local_path": ".",
+        "cos_path": "BED32-2016-09-29-13-03/BED32-2016-09-29-13-03.h5",
+        "input_retention_flag": "t",
+        "raw_debug_retention_flag": "t"
+    },
+    "infer": {
+        "status": "pending",
+        "segment_size": 1658880,
+        "debug_retention_flag": "t"
+    }
+}
