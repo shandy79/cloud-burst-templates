@@ -1,0 +1,9 @@
+# List of packages required for executing the analysis code in this container.  The list of packages available by
+# default in the ibmfunctions/action-python-v3.6 image can be found at:
+# https://github.com/ibm-functions/runtime-python/blob/master/python3.6/requirements.txt
+# Only those not available in the base Python runtime you've selected need to be included here.
+
+# TODO: The following are examples of those that might be useful, please replace w/your own as required
+biosppy
+matplotlib
+tensorflow==2.0.1
