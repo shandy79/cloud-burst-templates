@@ -1,0 +1,11 @@
+{
+    "_id": "_design/cloudant_views",
+    "views" : {
+        "complete" : {
+            "map" : "function(doc) { if (doc['<segment_type>']['status'] == 'complete') { emit(doc._id, doc['<segment_type>']['cos_file_output']); } }"
+        },
+        "incomplete" : {
+            "map" : "function(doc) { if (doc['<segment_type>']['status'] != 'complete') { emit(doc._id, doc['<segment_type>']['cos_file_output']); } }"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "_id": "_design/<segment_type>-<raw_id>",
+    "views" : {
+        "<segment_type>-<raw_id>-incomplete" : {
+            "map" : "function(doc) { if (doc.type == '<segment_type>' && doc.raw_id == '<raw_id>' && ! ('compute_end' in doc)) { emit(doc._id, doc.id); } }"
+        },
+        "<segment_type>-<raw_id>-complete" : {
+            "map" : "function(doc) { if (doc.type == '<segment_type>' && doc.raw_id == '<raw_id>' && 'compute_end' in doc) { emit(doc._id, { id: doc.id, segment_start: doc.segment_start, segment_end: doc.segment_end, segment_size: doc.segment_size, sw_version: doc.sw_version, compute_target: doc.compute_target, cos_file_output: doc.cos_file_output, compute_start: doc.compute_start, compute_end: doc.compute_end, error: doc.error }); } }"
+        }
+    }
+}

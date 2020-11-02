@@ -1,0 +1,33 @@
+{
+    "_id": "BED32-2016-09-29-13-03",
+    "cos_bucket": "sjh15-cos-bucket-03",
+    "raw": {
+        "file_name": "BED32-2016-09-29-13-03.h5",
+        "local_path": ".",
+        "cos_path": "BED32-2016-09-29-13-03/BED32-2016-09-29-13-03.h5",
+        "input_retention_flag": "t",
+        "raw_debug_retention_flag": "t"
+    },
+    "infer": {
+        "status": "segmented",
+        "segment_size": 1658880,
+        "debug_retention_flag": "t",
+        "segments": 99
+    }
+}
+
+
+// Segment to be analyzed
+{
+    // Populated at segment creation
+    "_id": "BED32-2016-09-29-13-03.infer.S0",
+    // 'raw_' elements are copied from the parent JSON document for ease of analysis
+    "raw_id": "BED32-2016-09-29-13-03",
+    "raw_cos_bucket": "sjh15-cos-bucket-03",
+    "type": "infer",
+    "id": "S0",
+    "segment_start": 0,
+    "segment_end": 1658880,
+    "segment_size": 1658880,
+    "cos_file_raw": "BED32-2016-09-29-13-03/raw/S0.npy",
+}
