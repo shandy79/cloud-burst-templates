@@ -4,10 +4,10 @@ import numpy as np
 import os
 
 
-# Reconstruct the segments, as NumPy arrays into the output file
+# Reconstruct the segments, as NumPy arrays, into the output file
 def reassemble_segments(cos_bucket, output_path, segments):
 
-    #### TODO: Refine this general pattern to suit your specific case.
+    #### TODO: Refine this general pattern to suit your specific case
 
     # Reconstruct the segments into this file
     with open(output_path, 'w') as f:
@@ -24,7 +24,7 @@ def reassemble_segments(cos_bucket, output_path, segments):
                 # Load data from the segment file
                 analyzed_segment_data = np.load(local_segment_path)
 
-                # TODO: Output analyzed_segment_data here
+                #### TODO: Output analyzed_segment_data here
                 f.write(analyzed_segment_data)
 
                 # Delete local tmp file and COS infer file
@@ -36,6 +36,6 @@ def reassemble_segments(cos_bucket, output_path, segments):
                 segment['error'] = f'Exception occurred in {segment["id"]}!\n{str(e)}'
                 continue
 
-            # TODO: Delete unnecessary keys from segment JSON
+            # Delete unnecessary keys from segment JSON
             del segment['sw_version']
             del segment['cos_file_output']

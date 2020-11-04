@@ -111,7 +111,7 @@ def main(data):
     # failures of this Function are due to a memory leak causing later invocations to exceed the maximum permitted
     # memory allocation.  Suggested by Michael Behrendt of IBM Cloud.
 
-    # TODO: Set any larger data structures to 'None' here
+    #### TODO: Set any larger data structures to 'None' here
 
     # Capture output from Linux 'free' command for debugging
     # https://docs.python.org/3.6/library/subprocess.html
