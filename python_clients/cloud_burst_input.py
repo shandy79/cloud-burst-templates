@@ -7,9 +7,9 @@ import requests
 import sys
 
 
-# Example for pipeline analyzing HDF5 files
+# Validation for input file based on the extension
 _INPUT_FILE_EXT = r'\.h(df?)?5$'
-_INPUT_FILE_DESC = 'a directory containing HDF5 files or one or more HDF5 files to be processed'
+_INPUT_FILE_DESC = 'a directory containing <input_file_type> files, or a list of one or more <input_file_type> files to be processed'
 
 _SEGMENT_SIZE_DESC = f'an integer representing the number of data points in a segment.'
 _SUFFIX_DESC = 'a string suffix to append to the file name (w/out extension) as the job ID.  The provided value will be appended following a "." character.'
