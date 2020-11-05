@@ -1,0 +1,11 @@
+{
+    "_id": "_design/nwchemcloud_views",
+    "views" : {
+        "complete" : {
+            "map" : "function(doc) { if (doc['status'] == 'complete' || doc['status'] == 'reclaimed') { emit(doc._id, doc['compute_target']); } }"
+        },
+        "incomplete" : {
+            "map" : "function(doc) { if (doc['status'] != 'complete' && doc['status'] != 'reclaimed') { emit(doc._id, doc['compute_target']); } }"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "_id": "test-batch-0",
+    "type": "nwchemcloud-sm",
+    "status": "complete",
+    "cpus": 8,
+    "duration": 86400,
+    "cos_bucket": "sjh15-cos-bucket-nwchemcloud",
+    "inputs": [
+      {
+        "id": "molecule-0",
+        "local_root": "...",
+        "cos_file_input": "test-batch-0/molecule-0/Inputfile.nw",
+        "cos_file_output": "test-batch-0/molecule-0/results.out",
+        "compute_start": "2019-10-18 10:09:04.682947",
+        "compute_end": "2019-10-18 10:09:04.689363"
+      },
+      {
+        "id": "molecule-1",
+        "local_root": "...",
+        "cos_file_input": "test-batch-0/molecule-1/Inputfile-1.nw",
+        "cos_file_output": "test-batch-0/molecule-1/results.out",
+        "compute_start": "2019-10-18 10:09:04.976995",
+        "compute_end": "2019-10-18 10:09:04.983124"
+      },
+      {
+        "id": "molecule-2",
+        "local_root": "...",
+        "cos_file_input": "test-batch-0/molecule-2/Inputfile-2.nw",
+        "cos_file_output": "test-batch-0/molecule-2/results.out",
+        "compute_start": "2019-10-18 10:09:05.363321",
+        "compute_end": "2019-10-18 10:09:05.368863"
+      }
+    ],
+    "sw_version": "NWChem 6.8.1",
+    "compute_target": 91424968,
+    "compute_webhook": "t,R0)\"Nao,dO_enG=+b\"=o(U2_FK\"D>&"
+  }

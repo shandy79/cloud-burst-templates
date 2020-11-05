@@ -1,0 +1,41 @@
+// Example of a completed JSON document.  For intermediate versions, refer to template
+// JSON documents found with each step.
+
+{
+    "_id": "batch_id",
+    "type": "nwchemcloud-sm",
+    "status": "complete",
+    "cpus": 8,
+    "duration": 86400,
+    "cos_bucket": "sjh15-cos-bucket-nwchemcloud",
+    "sw_version": "NWChem 6.8.1",
+    "compute_target": "<vsi_id>",
+    "compute_webhook": "<webhook_secret>",
+    "inputs": [
+        {
+            "id": "<molecule_name>-0",
+            "local_root": "...",
+            "cos_file_input": "<batch_id>/<id>/input_file.nw",
+            "cos_file_output": "<batch_id>/<id>/results.out",
+            "compute_start": "YYYY-MM-DD HH:MM:SS",
+            "compute_end": "YYYY-MM-DD HH:MM:SS",
+            "error": "",
+            "cos_results": [
+              "<batch_id>/<id>/molecule.b",
+              "<batch_id>/<id>/molecule.b^-1",
+              "<batch_id>/<id>/molecule.c",
+              "<batch_id>/<id>/molecule.cfock",
+              "<batch_id>/<id>/molecule.cphf_rhs",
+              "<batch_id>/<id>/molecule.cphf_sol",
+              "<batch_id>/<id>/molecule.db",
+              "<batch_id>/<id>/molecule.drv.hess",
+              "<batch_id>/<id>/molecule.fd_ddipole",
+              "<batch_id>/<id>/molecule.hess",
+              "<batch_id>/<id>/molecule.movecs",
+              "<batch_id>/<id>/molecule.nmode",
+              "<batch_id>/<id>/molecule.p",
+              "<batch_id>/<id>/molecule.zmat"
+            ]
+        }
+    ]
+}

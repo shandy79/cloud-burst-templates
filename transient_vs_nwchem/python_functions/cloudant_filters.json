@@ -1,0 +1,7 @@
+{
+    "_id": "_design/nwchemcloud_filters",
+    "filters": {
+        "create_pipeline": "function(doc, req) { if (doc['type'] == 'nwchemcloud-sm' && doc['status'] == 'pending') { return true; } return false; }",
+        "destroy_pipeline": "function(doc, req) { if (doc['type'] == 'nwchemcloud-sm' && doc['status'] == 'complete') { return true; } return false; }"
+    }
+}

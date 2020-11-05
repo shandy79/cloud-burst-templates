@@ -1,0 +1,13 @@
+export USE_MPI=y
+export NWCHEM_TARGET=LINUX64
+export USE_PYTHONCONFIG=y
+export PYTHONVERSION=2.7
+export PYTHONHOME=/usr
+export USE_64TO32=y
+export BLAS_SIZE=4
+export BLASOPT="-lopenblas -lpthread -lrt"
+export SCALAPACK_SIZE=4
+export SCALAPACK="-L/usr/lib64/openmpi/lib -lscalapack -lmpiblacs -lmpi_mpifh"
+export ELPA="-I/usr/lib64/gfortran/modules/openmpi -L/usr/lib64/openmpi/lib -lelpa"
+export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib/:$LD_LIBRARY_PATH
+export PATH=/usr/lib64/openmpi/bin/:$PATH
