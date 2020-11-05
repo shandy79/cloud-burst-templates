@@ -1,0 +1,25 @@
+{
+    "_id": "test-batch-0",
+    "type": "nwchemcloud-sm",
+    "status": "pending",
+    "cpus": 8,
+    "duration": 86400,
+    "cos_bucket": "sjh15-cos-bucket-nwchemcloud",
+    "inputs": [
+        {
+            "id": "molecule-0",
+            "local_root": "...",
+            "cos_file_input": "test-batch-0/molecule-0/Inputfile.nw"
+        },
+        {
+            "id": "molecule-1",
+            "local_root": "...",
+            "cos_file_input": "test-batch-0/molecule-1/Inputfile-1.nw"
+        },
+        {
+            "id": "molecule-2",
+            "local_root": "...",
+            "cos_file_input": "test-batch-0/molecule-2/Inputfile-2.nw"
+        }
+    ]
+}

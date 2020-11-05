@@ -1,0 +1,12 @@
+[Unit]
+Description=Flask Subprocess Launcher
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/nwchemcloud
+ExecStart=/usr/bin/python3 /opt/nwchemcloud/flask_subprocess.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

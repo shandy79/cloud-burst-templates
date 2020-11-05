@@ -1,0 +1,14 @@
+{
+    "_id": "_design/nwchemcloud_cleanup",
+    "views": {
+      "pending": {
+        "map": "function(doc) { if (doc['status'] == 'pending') { emit(doc._id, doc['compute_target']); } }"
+      },
+      "reclaimed": {
+        "map": "function(doc) { if (doc['status'] == 'reclaimed') { emit(doc._id, doc['compute_target']); } }"
+      },
+      "not_pending": {
+        "map": "function(doc) { if (doc['status'] != 'pending') { emit(doc._id, doc['compute_target']); } }"
+      }
+    }
+  }

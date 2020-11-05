@@ -1,0 +1,12 @@
+[Unit]
+Description=Redis Worker Launcher
+After=redis.service
+
+[Service]
+User=root
+WorkingDirectory=/opt/nwchemcloud
+ExecStart=/usr/bin/python3 /opt/nwchemcloud/redis_worker.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
